@@ -48,6 +48,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'booktest.middleware.BlockedIPSMiddleware',
 )
 
 ROOT_URLCONF = 'django_static.urls'
