@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader,RequestContext
-from booktest.models import BookInfo
+
 
 # Create your views here.
 # 定义视图函数，httprequest
