@@ -24,6 +24,7 @@ SECRET_KEY = '6_7$=s#p3=0ne_u(0^)-wg(3i9(uhdp&2uwi74_#vr@t$29hs^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+APPEND_SLASH = False
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'booktest',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -107,3 +109,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')

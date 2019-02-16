@@ -1,6 +1,7 @@
 from django.contrib import admin
 #后台管理
-from booktest.models import BookInfo,HeroInfo
+from booktest.models import AreaInfo,PicTest
+
 
 # Register your models here.
 #注册类模型
@@ -27,5 +28,7 @@ class BookInfoAdmin(admin.ModelAdmin):
 class HeroInfoAdmin(admin.ModelAdmin):
     list_display = ['hname', 'hgender', 'hcommnet', 'hbook']
 
-admin.site.register(BookInfo, BookInfoAdmin)
-admin.site.register(HeroInfo, HeroInfoAdmin)
+#admin.site.register(BookInfo, BookInfoAdmin)
+#admin.site.register(HeroInfo, HeroInfoAdmin)
+
+#admin.sites.reverse(PicTest)
