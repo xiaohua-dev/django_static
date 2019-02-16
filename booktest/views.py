@@ -40,3 +40,7 @@ def show_area(request):
     # 3、获取第一页的内容
     page = paginator.page(1)
     return render(request, 'booktest/show_area.html', {'area': area, 'page': page})
+
+
+def areas(request):
+    return  render(request, 'booktest/areas.html')

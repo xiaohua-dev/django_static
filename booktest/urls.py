@@ -5,6 +5,6 @@ urlpatterns = [
     url(r'^static_test/$', views.static_test),
     url(r'^show_upload/$', views.show_upload),
     url(r'^upload_handle$', views.upload_handle),
-    url(r'^show_area/$', views.show_area)
-
+    url(r'^show_area/$', views.show_area),
+    url(r'^areas/$', views.areas)
 ]
